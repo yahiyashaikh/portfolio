@@ -1,0 +1,28 @@
+<nav class="navbar">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="assets/fav.io.png" style="display:flex; width: 30px;" alt="logo"></a>
+    <div class="menu-toggle" (click)="toggleMenu()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M0 0h24v24H0z" fill="none"/>
+        <path d="M3 9h18v2H3V9zm0 4h18v2H3v-2zm0-8v2h18V5H3z"/>
+      </svg>
+    </div>
+    <ul class="navbar-nav" [class.show]="isMenuOpen">
+      <li class="nav-item">
+        <a class="nav-link" (click)="scrollTo('home')">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="scrollTo('about')">SKILLS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="scrollTo('education')">EDUCATION</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="scrollTo('projects')">PROJECTS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="scrollTo('Contact')">GET IN TOUCH</a>
+      </li>
+    </ul>
+  </div>
+</nav>

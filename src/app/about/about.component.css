@@ -1,0 +1,91 @@
+/* src/app/about/about.component.css */
+
+
+h2 {
+    font-size: 28px;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 8%;
+    color: beige;
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center align items horizontally */
+    margin-bottom: 20px; /* Adjust spacing as needed */
+  }
+  h2:hover{
+    text-decoration: underline;
+  }
+  
+
+/* src/app/about/about.component.css */
+/* src/app/about/about.component.css */
+
+.skills-container {
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust card width */
+    gap: 20px; /* Space between cards */
+  }
+  
+  @media screen and (max-width: 992px) {
+    .skills-container {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust card width for smaller screens */
+    }
+  }
+  
+  
+  /* src/app/about/about.component.css */
+
+.skill-card {
+    opacity: 0; /* Initially hide the skill cards */
+    padding: 16px;
+    box-shadow: 0 10px 20px rgba(132, 13, 13, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    transition: opacity .50s; /* Smooth transition for opacity */
+  }
+  
+  /* Animation for skill cards */
+  @keyframes fadeIn {
+    from {
+      opacity: 0; /* Start from fully transparent */
+    }
+    to {
+      opacity: 1; /* Fade in to fully visible */
+    }
+  }
+  
+  .animated {
+    animation: fadeIn .70s ease forwards;
+  }
+  
+  
+  
+  .skill-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .skill-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .skill-card p {
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  .skill-icon {
+    font-size: 40px; /* Icon size */
+    margin-bottom: 10px; /* Space below the icon */
+  }
+  
+  /* Colorful background for skill cards */
+  .skill-card:nth-child(odd) {
+    background-color: rgb(145, 18, 167); /* Light red */
+  }
+  
+  .skill-card:nth-child(even) {
+    background-color: rgb(102, 0, 149); /* Light green */
+  }
+  

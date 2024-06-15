@@ -1,0 +1,72 @@
+#projects {
+    padding: 40px 20px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center the container and heading horizontally */
+    text-align: center;
+    /* Center-align text inside the section */
+}
+
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(2, 1fr));
+    /* Responsive columns */
+    gap: 20px;
+    max-width: 1200px;
+    /* Maximum width for the container */
+    width: 100%;
+    /* Ensure the container takes the full width */
+
+}
+
+.project {
+    background:rgb(102, 0, 149);
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: translateX(100%);
+    animation: slideIn 0.5s forwards;
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.project.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
+.project h3 {
+    
+    color: beige;
+    margin-top: 0;
+}
+
+
+.project a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+.projects-container.visible {
+    opacity: 1;
+    /* Fully visible */
+    transform: translateX(0);
+    /* End position for slide-out */
+}

@@ -1,0 +1,49 @@
+/* src/app/navbar/navbar.component.css */
+.navbar {
+ 
+  padding: 1rem;
+  position: relative;
+}
+.menu-toggle {
+  position: absolute;
+  color: white !important; /* Change the color to white */
+  margin-left: auto; /* Align the toggle button to the right */
+  right: 50px; /* Adjust this value as needed */
+  transform: translateY(-80%);
+  cursor: pointer;
+}
+
+
+.navbar-nav {
+  display: none;
+  position: absolute;
+  top: 100%; /* Position the menu just below the navbar */
+  right: 0; /* Align the menu to the right */
+  background-color: #812dca; /* Adjust as needed */
+  padding: 10px;
+  border: 1px solid #ccc; /* Add borders for visibility */
+  box-shadow: 0 2px 4px rgba(232, 203, 232, 0.1); /* Add shadow for depth */
+  list-style: none; /* Remove default list styling */
+  margin: 0; /* Remove default margin */
+  width: 20%; /* Make the dropdown full width of the navbar */
+}
+
+
+
+.navbar-nav.show {
+  display: block;
+}
+
+.nav-item {
+  padding: 8px 12px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #35023b; /* Adjust color as needed */
+  display: block;
+}
+
+.nav-link:hover {
+  background-color: #f0f0f0; /* Add a hover effect */
+}
