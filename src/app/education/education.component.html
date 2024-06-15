@@ -1,0 +1,19 @@
+<!-- education.component.html -->
+
+<div class="education" [@slideIn]>
+    <section id="education">
+    <h2>Education</h2>
+    <div class="education-container">
+      <div class="education-item" *ngFor="let item of educationItems; let i = index" [class]="getEducationItemClass(i)">
+        <div class="education-details">
+          <h3>{{ item.degree }}</h3>
+          <p>{{ item.institution }}</p>
+          <p>{{ item.duration }}</p>
+          <p>{{ item.Percentage }}</p>
+        </div>
+      </div>
+    </div>
+</section>
+
+</div>
+

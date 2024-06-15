@@ -1,0 +1,97 @@
+/* src/app/education/education.component.css */
+
+/* Container for the whole education section */
+.education-container {
+    display: flex;
+    align-items: flex-start; /* Align items to the start (top) */
+  }
+  
+  /* Line on the left side */
+  .line {
+    width: 2px; /* Adjust line thickness */
+    height: 100%; /* Take up full height of the container */
+    background-color: #ccc; /* Color of the line */
+  }
+  
+  /* Each education item */
+  .education-item {
+    flex: 1; /* Each item takes up equal space */
+    padding: 20px; /* Add padding for spacing */
+    border-top: 2px solid #ccc; /* Add top border to separate items */
+  }
+  
+  /* Education details */
+  .education-details {
+    color: #333; /* Text color */
+  }
+  
+  /* Animation for fading in */
+  .fadeIn {
+    opacity: 0;
+  }
+  
+  /* Animation for sliding in */
+  .slideIn {
+    transform: translateY(50px);
+  }
+  
+  /* education.component.css */
+  
+  .education {
+    padding: 20px;
+  }
+  
+  /* Education heading */
+.education h2 {
+    font-size: 28px;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: beige;
+    
+    margin-bottom: 20px;
+    text-align: center; /* Center the text */
+  }
+  .education h2:hover{
+    text-decoration: underline;
+  }
+  /* src/app/education/education.component.css */
+
+/* Container for the whole education section */
+.education-container {
+    display: flex;
+    
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+  
+  /* Each education item */
+  .education-item {
+    width: 80%; /* Adjust width as needed */
+    margin-bottom: 20px; /* Add margin between items */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px beige;
+    animation: fadeIn 500ms ease-in-out, slideIn 500ms ease-in-out, colorChange 500ms ease-in-out;
+  }
+  
+  /* Education details */
+  .education-details {
+    color: #333; /* Text color */
+  }
+  
+  /* Animation for fading in */
+  .fadeIn {
+    opacity: 0;
+  }
+  
+  /* Animation for sliding in */
+  .slideIn {
+    transform: translateY(50px);
+  }
+  
+  /* Item colors */
+  .item1 { background-color: #d23fe9; }
+  .item2 { background-color: #b210c1; }
+  .item3 { background-color: #ee38ff; }
+  /* Add more color classes as needed */
+  
